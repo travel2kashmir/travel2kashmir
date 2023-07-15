@@ -428,8 +428,4 @@ function place() {
     )
 }
 
-<<<<<<< Updated upstream
-export default place
-=======
 export default place;
->>>>>>> Stashed changes
