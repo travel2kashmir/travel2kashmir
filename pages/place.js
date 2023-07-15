@@ -10,7 +10,6 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import Carousel from 'better-react-carousel';
 import PropertyCard from '@/components/T2K/Cards/PropertyCard';
 import Footer from '@/components/T2K/Footer';
