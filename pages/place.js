@@ -10,6 +10,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 import Carousel from 'better-react-carousel';
 import PropertyCard from '@/components/T2K/Cards/PropertyCard';
 import Footer from '@/components/T2K/Footer';
@@ -77,7 +78,7 @@ function place() {
             setLocation(response.data)
             setWeatherDetailLoader(1)
         }).catch((err) => {
-            alert(JSON.stringify(err))
+            // alert(JSON.stringify(err))
         })
     }
 
