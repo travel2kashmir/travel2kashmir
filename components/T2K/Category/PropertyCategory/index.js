@@ -33,12 +33,12 @@ function PropertyCategory() {
         }
 
         all_property.rooms.map(room => {
-            
+
             if (Object.keys(room).includes("unconditional_rates") === false) {
                 temp_rates.push({
                     property_id, price: 0, currency: "none"
                 })
-               
+
             }
             else {
                 temp_rates.push({
@@ -52,11 +52,11 @@ function PropertyCategory() {
             return (temp_rates[0])
         }
 
-        
+
         let min = temp_rates[0].price;
-        
+
         let final = { "property_id": property_id, "price": temp_rates[0].price, "currency": temp_rates[0].currency }
-       
+
         for (let i = 0; i < temp_rates.length; i++) {
             if (min > temp_rates[i].price) {
                 min = temp_rates[i].price
@@ -104,7 +104,7 @@ function PropertyCategory() {
             {data === false ? <>
                 <div className='py-52 '>
                     <h1 className='text-3xl font-medium md:text-6xl text-gray-700 text-center pb-2 md:pb-5'>OOPS!</h1>
-                    <h2 className='text-lg md:text-4xl text-gray-700 text-center capitalize'>no {propertyType} found!</h2>
+                    <h2 className='text-lg md:text-4xl text-gray-700 text-center capitalize'>no Active {propertyType} found!</h2>
                 </div>
             </> : <>
                 <div className=' h-40 text-center flex justify-center bg-slate-100'>
@@ -123,9 +123,16 @@ function PropertyCategory() {
                                     <>
                                         {onlyBasicDetails?.map((hotel, idx) => {
                                             return (
-                                                <div key={idx} className='lg:w-3/12 pb-3 md:pb-0 lg:pb-0' >
-                                                    <PropertyCard hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} bgcolor={'bg-white'} />
-                                                </div>
+                                                <>
+                                                    {hotel.status === true ?
+                                                        <div key={idx} className='lg:w-3/12 pb-3 md:pb-0 lg:pb-0' >
+                                                            <PropertyCard hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} bgcolor={'bg-white'} />
+                                                        </div> : <>{(() => {
+                                                            setData(false)
+                                                            setShowUI(1)
+                                                        })()}</>}
+                                                </>
+
                                             )
                                         })
                                         }

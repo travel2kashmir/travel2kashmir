@@ -38,7 +38,7 @@ function PropertyCard({ hotel = {}, price, bgcolor }) {
                     {/* hotel rate  */}
                     {price?.price != 0 ? <div className='text-sm m-2 flex justify-start items-center'>
                         <CreditCardIcon sx={{ fontSize: '20px' }} />
-                        <h3 className='m-2 capitalize'>{price?.currency}{price?.price}<span className='text-xs'>/Night + taxes</span></h3>
+                        <h3 className='m-2 capitalize'>{price?.currency.toUpperCase()} {price?.price}<span className='text-xs'>/Night + taxes</span></h3>
                     </div> : <></>}
 
 

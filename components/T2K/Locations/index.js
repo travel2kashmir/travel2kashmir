@@ -121,10 +121,7 @@ function index() {
                   )
                 })}</>}
                
-
-
-
-              </div>
+            </div>
 
 
             </div>
@@ -147,8 +144,9 @@ function index() {
 
               </> : <>
                 {onlyBasicDetails?.map((hotel, idx) =>
-                (hotel?.address[0].address_city === selectedCity ?
+                (hotel?.address[0].address_city === selectedCity && hotel.status === true?
                   <div key={idx} className='mb-3 md:mb-0 md:w-5/12 lg:w-3/12' >
+                    
                     <PropertyCard bgcolor={"bg-white"} hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} />
                   </div> : <></>
                 ))}

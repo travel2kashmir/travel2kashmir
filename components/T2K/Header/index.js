@@ -23,8 +23,6 @@ function Header({bgColor='bg-gradient-to-r from-blue-100 to-rose-100', menu, set
         
         <ul className='hidden lg:mr-20 lg:justify-end lg:block lg:flex lg:gap-10 lg:my-auto lg:ml-auto'>
           <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer'><a href='/'>Home</a></li>
-          <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer'><a href='/aboutus'>About us</a></li>
-          <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer' onClick={()=>{Router.push(`${window.location.origin}/#location`)}}>Properties</li>
           <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer' onClick={() => document.getElementById('sublist').className === 'hidden' ? document.getElementById('sublist').className = 'block absolute bg-slate-100 py-4 px-5 w-36 text-left rounded-b-3xl' : document.getElementById('sublist').className = 'hidden'}>
           <span >Places</span>
             <ul id='sublist' className='hidden'>
@@ -45,6 +43,9 @@ function Header({bgColor='bg-gradient-to-r from-blue-100 to-rose-100', menu, set
               })}
             </ul>
           </li>
+          <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer' onClick={()=>{Router.push(`${window.location.origin}/#location`)}}>Properties</li>
+          <li className='font-medium text-gray-700 hover:text-blue-600 cursor-pointer'><a href='/aboutus'>About us</a></li>
+         
         </ul>
       </div>
     </section>
