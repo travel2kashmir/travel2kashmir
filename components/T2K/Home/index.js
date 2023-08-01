@@ -15,13 +15,13 @@ function Home({ menu, setMenu }) {
 
       <section className='my-auto'>
         <div className='lg:flex lg:flex-wrap rounded justify-between'>
-          <img src={bgImg} className='bgi relative -z-300'></img>
-          <div className='absolute w-screen  z-50'>
+          <img src={bgImg} className='bgimage relative -z-300'></img>
+          <div className='absolute inset-0 w-screen  z-50'>
           <Header
           menu={menu}
           setMenu={setMenu}
-          bgColor={'bg-transparent'}
-          textColor={'text-gray-100 hover:text-black'}
+          bgColor={'bg-transparent '}
+          textColor={'text-gray-100 hover:text-gray-300'}
           />
           </div>
           
@@ -30,11 +30,11 @@ function Home({ menu, setMenu }) {
             <img src={bgImg} className='home-img h-96 lg:rounded-3xl'></img>
           </div> */}
 
-          <div className='absolute bgi' >
-            <div className='bgt mx-auto flex justify-center items-center lg:flex-none lg:w-6/12 z-10'>
+          <div className='absolute bgimage inset-0 z-30 h-screen' >
+            <div className='bgt  mx-auto flex home-content lg:flex-none w-4/6 z-10'>
               <div className='px-5 md:px-14 my-auto'>
                 <div className="text-center text-white">
-                  <h1 className='text-3xl md:text-5xl lg:text-5xl font-semibold pb-10'>Finding the Ideal Property in Kashmir is Simple</h1>
+                  <h1 className='text-2xl md:text-5xl lg:text-5xl font-semibold pb-10'>Finding the Ideal Property in Kashmir is Simple</h1>
                   <p className='text-base md:text-2xl lg:text-lg text-gray-100 tracking-wide'>With our convenient search, browse extensive real estate listings by category. Locate the ideal partner!</p>
                 </div>
               </div>
@@ -68,14 +68,29 @@ function Home({ menu, setMenu }) {
                         height:400px
                     }
                 } 
-                .bgi{
+                .home-content {
+                  height:90vh
+              }
+
+              //   @media (max-width: 460px) {
+              //     .bgt{
+              //       width:100%;
+              //       margin-top:28vh;
+                                        
+              //     }   
+              // } 
+              //   @media (min-width: 1020px) {
+              //     .bgt{
+              //       width:60%;
+              //       height:100vh;
+              //     }   
+              // } 
+
+                .bgimage{
                   height:100vh;
                   width:100vw;
                 }   
-                .bgt{
-                  height:100vh;
-                  width:40vw;
-                }   
+               
                 `}
       </style>
     </section>

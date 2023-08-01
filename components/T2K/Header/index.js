@@ -9,12 +9,16 @@ function Header({bgColor='bg-slate-100',textColor='text-gray-700 hover:text-blue
 
   return (
     <section className={bgColor}>
-      <div className={`py-3 lg:py-5 px-2 lg:px-5 ${bgColor!=='bg-transparent'?`border border-b-2`:`border-none`} flex justify-between`}>
+      <div className={`py-3 lg:py-5 px-2 lg:px-5 border-none flex justify-between`}>
         {/* mobile view  and tablet view */}
+        <>
         <img src='/t2k.png' className='h-12 md:h-16 lg:hidden'></img>
-        <h2 className='lg:hidden font-medium text-xl md:text-3xl my-auto' style={{ color: '#2912d3' }}>Travel2Kashmir</h2>
+        <h2 className='lg:hidden font-medium text-xl md:text-3xl my-auto text-white'>Travel2Kashmir</h2>
         
-        {menu === true ? <i className='lg:hidden' onClick={() => setMenu(!menu) }><CloseIcon fontSize='large' /></i> :<i className='lg:hidden' onClick={() => setMenu(!menu) }><MenuIcon fontSize='large' /></i>}
+        <div className='flex justify-center items-center'>{menu === true ? <i className='lg:hidden' onClick={() => setMenu(!menu) }>
+          <CloseIcon fontSize='large' sx={{color:'white'}}/></i> :
+        <i className='lg:hidden' onClick={() => setMenu(!menu) }><MenuIcon fontSize='large' sx={{color:'white'}} /></i>}</div>
+        </>
 
         {/* desktop view */}
         <div className='hidden lg:flex cursor-pointer '>
