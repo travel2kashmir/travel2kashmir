@@ -3,11 +3,11 @@ import Header from '../Header';
 
 function Home({ menu, setMenu }) {
   const [bgImg, setBgImg] = useState('/bg1.jpg')
+  let sources = ['/bg1.jpg', '/bg2.jpg', '/bg3.jpg','/bg4.jpg'];
   setInterval(() => {
-    let sources = ['/bg1.jpg', '/bg2.jpg', '/bg3.jpg','/bg4.jpg'];
-    setBgImg(sources[Math.floor(Math.random() * sources.length)])
-
-  }, 10000)
+    let imgIndex=sources[Math.floor(Math.random() * sources.length)];
+    setBgImg(imgIndex)
+    }, 10000)
   return (
     <section className='h-screen lg:h-screen bg-gradient-to-r from-blue-100 to-rose-100 border-b-2 lg:flex lg:flex-col'>
 
