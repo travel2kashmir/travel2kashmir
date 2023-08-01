@@ -1,37 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Header';
 
 function Home({ menu, setMenu }) {
+  const [bgImg, setBgImg] = useState('/bg1.jpg')
+  setInterval(() => {
+    let sources = ['/bg1.jpg', '/bg2.jpg', '/bg3.jpg','/bg4.jpg'];
+    setBgImg(sources[Math.floor(Math.random() * sources.length)])
+
+  }, 10000)
   return (
     <section className='h-screen lg:h-screen bg-gradient-to-r from-blue-100 to-rose-100 border-b-2 lg:flex lg:flex-col'>
 
-      <Header
-        menu={menu}
-        setMenu={setMenu}
-      />
+
 
       <section className='my-auto'>
         <div className='lg:flex lg:flex-wrap rounded justify-between'>
-
-          {/* image only visible for lg screen */}
-          <div className='hidden lg:block lg:h-96 lg:w-3/12 lg:flex lg:justify-center lg:mt-36 lg:mb-5'>
-            <img src='/winter1.jpg' className='home-img h-96 lg:rounded-3xl'></img>
+          <img src={bgImg} className='bgi relative -z-300'></img>
+          <div className='absolute w-screen  z-50'>
+          <Header
+          menu={menu}
+          setMenu={setMenu}
+          bgColor={'bg-transparent'}
+          textColor={'text-gray-100 hover:text-black'}
+          />
           </div>
+          
+          {/* image only visible for lg screen */}
+          {/* <div className='hidden  lg:h-96 lg:w-3/12 lg:flex lg:justify-center lg:mt-36 lg:mb-5'>
+            <img src={bgImg} className='home-img h-96 lg:rounded-3xl'></img>
+          </div> */}
 
-          <div className='home-content flex lg:flex-none lg:w-6/12 z-10'>
-            <div className='px-5 md:px-14 my-auto'>
-              <div className="text-center">
-                <h1 className='text-3xl md:text-5xl lg:text-4xl font-semibold pb-10' style={{ color: '#2912d3' }}>Finding the Ideal Property in Kashmir is Simple</h1>
-                <p className='text-base md:text-2xl lg:text-lg text-gray-500 tracking-wide'>With our convenient search, browse extensive real estate listings by category. Locate the ideal partner!</p>
+          <div className='absolute bgi' >
+            <div className='bgt mx-auto flex justify-center items-center lg:flex-none lg:w-6/12 z-10'>
+              <div className='px-5 md:px-14 my-auto'>
+                <div className="text-center text-white">
+                  <h1 className='text-3xl md:text-5xl lg:text-5xl font-semibold pb-10'>Finding the Ideal Property in Kashmir is Simple</h1>
+                  <p className='text-base md:text-2xl lg:text-lg text-gray-100 tracking-wide'>With our convenient search, browse extensive real estate listings by category. Locate the ideal partner!</p>
+                </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
           {/* image only visible for lg screen */}
-          <div className='hidden lg:block lg:h-96 lg:w-3/12 lg:flex lg:justify-center lg:mt-5'>
+          {/* <div className='hidden lg:block lg:h-96 lg:w-3/12 lg:flex lg:justify-center lg:mt-5'>
             <img src='/chinar2.jpg' className='home-img lg:h-96 lg:rounded-3xl'></img>
-          </div>
+          </div> */}
 
         </div>
       </section>
@@ -53,7 +67,15 @@ function Home({ menu, setMenu }) {
                     .home-img {
                         height:400px
                     }
-                }    
+                } 
+                .bgi{
+                  height:100vh;
+                  width:100vw;
+                }   
+                .bgt{
+                  height:100vh;
+                  width:40vw;
+                }   
                 `}
       </style>
     </section>

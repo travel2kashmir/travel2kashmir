@@ -125,7 +125,7 @@ function PropertyCategory() {
                                             return (
                                                 <>
                                                     {hotel.status === true ?
-                                                        <div key={idx} className='lg:w-3/12 pb-3 md:pb-0 lg:pb-0' >
+                                                        <div key={hotel?.property_id} className='lg:w-3/12 pb-3 md:pb-0 lg:pb-0' >
                                                             <PropertyCard hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} bgcolor={'bg-white'} />
                                                         </div> : <>{(() => {
                                                             setData(false)
