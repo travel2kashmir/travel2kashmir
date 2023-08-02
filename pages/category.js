@@ -17,6 +17,7 @@ function Category() {
       <Header 
         menu={menu}
         setMenu={setMenu}
+        borderLine={true}
       />
       <PropertyCategory />
       <Footer />

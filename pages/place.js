@@ -181,6 +181,7 @@ function place() {
                 bgColor='white'
                 menu={menu}
                 setMenu={setMenu}
+                borderLine={true}
             />
             <div className='px-3 h-full '>
                 <div className='my-8 flex items-center'>

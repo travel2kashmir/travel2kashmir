@@ -94,7 +94,7 @@ function index() {
         <div >
           <div className='py-4'>
             <div className='px-3 text-center'>
-              <div className='text-center mb-6'>
+              <div className='text-center pb-6'>
                 <span className='bg-blue-100 pr-2 py-2 rounded-2xl'>
                   <span><FontAwesomeIcon icon={faCircleArrowRight} size="2xl" style={{ color: "#2912d3", }} /></span>
                   <span className='text-blue-800 text-xl font-medium pl-3 tracking-wide'>Properties</span>
@@ -120,20 +120,15 @@ function index() {
 
                   )
                 })}</>}
-               
+
+              </div>
             </div>
-
-
-            </div>
-
-
           </div>
-
         </div>
       </section>
 
       {/* properties based on location  */}
-      <section className='mb-4 bg-slate-100 pb-10'>
+      <section className='bg-slate-100 pb-10'>
         <div className='py-1'>
           <div className='px-3 text-center'>
             <div className='md:flex md:flex-wrap md:gap-10 md:justify-center md:mt-10 lg:flex lg:flex-wrap lg:gap-4 lg:justify-center lg:mt-4'>
@@ -144,9 +139,9 @@ function index() {
 
               </> : <>
                 {onlyBasicDetails?.map((hotel, idx) =>
-                (hotel?.address[0].address_city === selectedCity && hotel.status === true?
+                (hotel?.address[0].address_city === selectedCity && hotel.status === true ?
                   <div key={idx} className='mb-3 md:mb-0 md:w-5/12 lg:w-3/12' >
-                    
+
                     <PropertyCard bgcolor={"bg-white"} hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} />
                   </div> : <></>
                 ))}

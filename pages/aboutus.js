@@ -16,6 +16,7 @@ function Aboutus() {
       <Header
         menu={menu}
         setMenu={setMenu}
+        borderLine={true}
       />
 
       <AboutusComponent />

@@ -102,9 +102,10 @@ function PropertyCategory() {
     return (
         <section>
             {data === false ? <>
-                <div className='py-52 '>
+                <div className='py-52 bg-slate-100'>
                     <h1 className='text-3xl font-medium md:text-6xl text-gray-700 text-center pb-2 md:pb-5'>OOPS!</h1>
-                    <h2 className='text-lg md:text-4xl text-gray-700 text-center capitalize'>no Active {propertyType} found!</h2>
+                    <h2 className='text-lg md:text-4xl text-gray-700 text-center capitalize'>
+                        no Active {propertyType} found!</h2>
                 </div>
             </> : <>
                 <div className=' h-40 text-center flex justify-center bg-slate-100'>
