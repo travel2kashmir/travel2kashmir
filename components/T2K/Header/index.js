@@ -14,11 +14,12 @@ function Header({bgColor='bg-slate-100',textColor='text-gray-700 hover:text-blue
         {/* mobile view  and tablet view */}
         <>
         <img src='/t2k.png' className='h-12 md:h-16 lg:hidden'></img>
-        <h2 className='lg:hidden font-medium text-xl md:text-3xl my-auto text-white'>Travel2Kashmir</h2>
+        <h2 className={`lg:hidden font-medium text-xl md:text-3xl my-auto ${borderLine===true?`text-black`:`text-white`}`}>Travel2Kashmir</h2>
         
         <div className='flex justify-center items-center'>{menu === true ? <i className='lg:hidden' onClick={() => setMenu(!menu) }>
-          <CloseIcon fontSize='large' sx={{color:'white'}}/></i> :
-        <i className='lg:hidden' onClick={() => setMenu(!menu) }><MenuIcon fontSize='large' sx={{color:'white'}} /></i>}</div>
+          <CloseIcon fontSize='large' sx={borderLine===true?{color:'black'}:{color:'white'}}/></i> :
+        <i className='lg:hidden' onClick={() => setMenu(!menu) }>
+          <MenuIcon fontSize='large' sx={borderLine===true?{color:'black'}:{color:'white'}} /></i>}</div>
         </>
 
         {/* desktop view */}
