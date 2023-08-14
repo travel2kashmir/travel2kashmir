@@ -353,10 +353,11 @@ function place() {
                     <div className='py-10 text-center '>
                         <h2 className='font-bold text-2xl lg:text-2xl  border-b-2 border-slate-600 inline-block'>Hotels</h2>
                     </div>
+
                     {empty === false ?
-                        <div className='md:flex md:flex-wrap md:gap-2 lg:gap-5 md:justify-start pb-10'>
+                        <div className='pb-10 '>
                             {hotelDetailLoader === 0 ? <>
-                                <Loader size={`w-full h-44 md:w-5/12 md:h-44`} /><Loader size={`h-0 md:w-5/12 md:h-44`} /> </> : <>
+                                <Loader size={`w-full h-44 md:mr-2 md:w-5/12 md:h-44`} /><Loader size={`h-0 md:w-5/12 md:h-44`} /> </> : <>
                                 <Carousel
                                     cols={3} rows={1} gap={20} autoPlay={5000} loop={true}
                                     responsiveLayout={[
@@ -378,7 +379,7 @@ function place() {
                                         },
                                         {
                                             breakpoint: 1200,
-                                            cols: 2,
+                                            cols: 3,
                                             rows: 1,
                                             gap: 10,
                                             loop: true,
@@ -387,12 +388,9 @@ function place() {
                                     ]}
                                 >
                                     {onlyBasicDetails?.map((hotel, idx) =>
-                                    (hotel?.address[0].address_city === selectedCity ?
+                                    (hotel?.address[0].address_city === selectedCity && hotel.status === true ?
                                         <Carousel.Item key={idx}>
-                                            { }
-
                                             <PropertyCard bgcolor={"bg-white z-50 shadow-lg"} hotel={hotel} price={hotelRoomPrice.filter(price => price.property_id === hotel.property_id)[0]} />
-
                                         </Carousel.Item>
 
                                         : <></>
