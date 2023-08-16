@@ -31,12 +31,12 @@ function Footer() {
                         <div>
                             <div className='pt-10 px-3'>
                                 <a className='flex h-10 mb-6'><h2 className='flex items-center text-xl'>Travel2Kashmir</h2></a>
-                                <p className='mb-6 text-sm text-slate-200'>Discover the enchanting beauty of Kashmir with Travel 2 Kashmir, a dynamic startup empowering the region's tourism industry through immersive experiences and responsible travel practices. Experience the warmth of local hospitality and explore the hidden gems of this breathtaking destination with us.</p>
+                                <p className='mb-6 text-sm text-slate-200'>Experience the captivating allure of Kashmir through Travel2Kashmir, an innovative startup that is revitalizing the local tourism sector with immersive adventures and sustainable travel approaches. Embrace the genuine local hospitality and uncover the undiscovered treasures of this awe-inspiring location alongside us.</p>
                                 <ul className='text-white flex gap-5'>
                                     <li><Link href="https://www.facebook.com/travel2kashmir/"><FacebookIcon /></Link></li>
-                                    <li><TwitterIcon /></li>
-                                    <li><LinkedInIcon /></li>
-                                    <li><Link href="https://instagram.com/travel2kashmirr?igshid=MzNlNGNkZWQ4Mg=="><InstagramIcon /></Link></li>
+                                    {/* <li><TwitterIcon /></li> */}
+                                    {/* <li><LinkedInIcon /></li> */}
+                                    {/* <li><Link href="https://instagram.com/travel2kashmirr?igshid=MzNlNGNkZWQ4Mg=="><InstagramIcon /></Link></li> */}
 
                                 </ul>
                             </div>
