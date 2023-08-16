@@ -134,7 +134,48 @@ function Footer() {
             <div className={showModalTC === 1 ? "block" : "hidden"}>
                 <Modal
                     title={`Terms & Conditions`}
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
+                    description={`Terms and Conditions for Travel2Kashmir
+
+                    Effective Date: 01 Aug 2023
+                    
+                    Please read these Terms and Conditions ("Terms") carefully before using the services provided by Travel2Kashmir ("we," "us," "our"). By accessing or using our website, mobile application, or any other platform provided by Travel2Kashmir (collectively referred to as the "Services"), you agree to be bound by these Terms. If you do not agree with these Terms, please do not use our Services.
+                    
+                    1. Modification and Withdrawal of Offers or Services:
+                    We reserve the right to modify, suspend, or withdraw any offer, service, or feature without prior notice. We are not liable to you or any third party for any changes or discontinuations.
+                    
+                    2. Changes to Payment Plans and Free Tier Usage:
+                    We reserve the right to change the payment plans, pricing, and usage limits of our services, including any free tiers, at our sole discretion. We will notify you of such changes through email or prominent notices on our website.
+                    
+                    3. Data Management and Storage:
+                    We have the right to manage and store your data on servers that we deem appropriate, including those located in different jurisdictions. By using our Services, you consent to the storage and processing of your data as outlined in our Privacy Policy.
+                    
+                    4. Advanced Payments:
+                    Any service provided by Travel2Kashmir will be subject to advanced payments. We will not initiate or fulfill any booking, reservation, or service until the required payment has been received and confirmed.
+                    
+                    5. User Responsibilities:
+                    You agree to use our Services for lawful purposes only and to comply with all applicable laws and regulations. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+                    
+                    6. Intellectual Property:
+                    All content and materials provided through our Services, including text, graphics, logos, icons, images, audio clips, and software, are the property of Travel2Kashmir or its licensors and are protected by intellectual property laws. You may not reproduce, distribute, modify, or create derivative works based on our content without our prior written consent.
+                    
+                    7. Limitation of Liability:
+                    To the extent permitted by law, Travel2Kashmir shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, arising out of or related to your use of our Services.
+                    
+                    8. Indemnification:
+                    You agree to indemnify, defend, and hold Travel2Kashmir harmless from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorney's fees) arising out of or related to your use of our Services, your violation of these Terms, or your infringement of any rights of a third party.
+                    
+                    9. Governing Law:
+                    These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law principles.
+                    
+                    10. Contact Us:
+                    If you have any questions, concerns, or requests regarding these Terms, please contact us at chairman@travel2kashmir.com
+                    
+                    By using our Services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
+                    
+                    Travel2kashmir
+                    shalteng, Srinagar
+                    chairman@travel2kashmir.com
+                    `}
                     setShowModal={(e) => setShowModalTC(e)}
                 />
             </div>
@@ -142,7 +183,55 @@ function Footer() {
             <div className={showModalPrivacy === 1 ? "block" : "hidden"}>
                 <Modal
                     title={`Privacy Policy`}
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
+                    description={`Privacy Policy for Travel2Kashmir
+
+                    Effective Date: 1st Aug 2023
+                    
+                    At Travel2Kashmir ("we," "us," "our"), we are committed to maintaining the privacy and security of your personal information. This Privacy Policy outlines our practices regarding the collection, use, and protection of your data when you use our services. By accessing or using our website, mobile application, or any other platform provided by Travel2Kashmir (collectively referred to as the "Services"), you consent to the terms outlined in this Privacy Policy.
+                    
+                    1. Information We Collect:
+                    We may collect and store certain information from you when you use our Services, including:
+                    - Personal information such as your name, contact details, and billing information.
+                    - Travel-related information, such as your travel itinerary and preferences.
+                    - Log and usage data, including IP addresses, browser type, device information, and interaction with our Services.
+                    - Other information you choose to provide, such as feedback, reviews, and communication preferences.
+                    
+                    2. How We Use Your Information:
+                    We will use the information we collect for the following purposes:
+                    - To provide and improve our Services, including customization and personalization.
+                    - For research and development purposes to enhance our offerings and user experience.
+                    - To communicate with you regarding your bookings, inquiries, and updates about our Services.
+                    - To facilitate payment processing and billing.
+                    - To comply with legal obligations and enforce our terms of use.
+                    
+                    3. Data Sharing:
+                    We will not share your personal information with third parties except in the following circumstances:
+                    - With subsidiaries or affiliated companies of Travel2Kashmir for the purposes outlined in this Privacy Policy.
+                    - With service providers who assist us in providing the Services, subject to confidentiality agreements.
+                    - When required by law, regulation, or legal process.
+                    - In connection with the sale, merger, or acquisition of all or part of our business.
+                    
+                    4. Data Storage and Security:
+                    Your data will be stored on servers located within India, and we will abide by Indian IT rules and regulations. We employ technical and organizational measures to safeguard your information, but please note that no method of transmission or storage is 100% secure. We cannot guarantee the absolute security of your data.
+                    
+                    5. Your Choices and Rights:
+                    You have the right to access, correct, update, and delete your personal information. You can manage your communication preferences and opt-out of marketing communications at any time. To exercise your rights, please contact us at [insert contact email].
+                    
+                    6. Children's Privacy:
+                    Our Services are not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you believe that we have inadvertently collected information from a child, please contact us to have the data removed.
+                    
+                    7. Updates to this Privacy Policy:
+                    We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any significant changes via email or through prominent notices on our website.
+                    
+                    8. Contact Us:
+                    If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information.
+                    
+                    By using our Services, you acknowledge that you have read and understood this Privacy Policy and agree to the collection, use, and sharing of your information as described herein.
+                    
+                    Travel2kashmir
+                    Shalteng,Srinagar
+                    chairman@travel2kashmir.com
+                    `}
                     setShowModal={(e) => setShowModalPrivacy(e)}
                 />
             </div>

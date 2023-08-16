@@ -4,8 +4,8 @@ import React from 'react'
 function Modal({title,description,setShowModal}) {
   return (
     <div className="overflow-x-hidden overflow-y-auto fixed top-0 left-0 right-0 backdrop-blur-3xl h-screen bg-black/30 md:inset-0 z-50 flex justify-center items-center sm:h-full">
-                    <div className="relative w-full max-w-2xl px-4 h-auto md:h-auto ">
-                        <div className='bg-white rounded-lg shadow relative'>
+                    <div className="relative w-full max-w-2xl px-4  md:h-auto ">
+                        <div className='bg-white rounded-lg shadow relative h-96  overflow-scroll'>
                             <div className="flex items-start justify-between p-5 border-b rounded-t">
                                 <h3 className='text-black text-xl font-semibold'>{title}</h3>
                                 <button
@@ -30,7 +30,7 @@ function Modal({title,description,setShowModal}) {
                                 </button>
                             </div>
 
-                            <div className='px-5 py-2'>
+                            <div className='px-0 py-0 w-screen'>
                                 <p className='text-sm text-slate-500'>
                                 {description}
                                 </p>
