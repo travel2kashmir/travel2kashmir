@@ -30,7 +30,7 @@ function Modal({title,description,setShowModal}) {
                                 </button>
                             </div>
 
-                            <div className='px-0 py-0 w-screen'>
+                            <div className='px-2 py-2 w-screen'>
                                 <p className='text-sm text-slate-500'>
                                 {description}
                                 </p>

@@ -165,7 +165,7 @@ function Footer() {
                     You agree to indemnify, defend, and hold Travel2Kashmir harmless from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorney's fees) arising out of or related to your use of our Services, your violation of these Terms, or your infringement of any rights of a third party.
                     
                     9. Governing Law:
-                    These Terms shall be governed by and construed in accordance with the laws of [Your Country], without regard to its conflict of law principles.
+                    These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.
                     
                     10. Contact Us:
                     If you have any questions, concerns, or requests regarding these Terms, please contact us at chairman@travel2kashmir.com
